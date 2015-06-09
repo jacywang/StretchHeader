@@ -20,4 +20,9 @@
     // Configure the view for the selected state
 }
 
+-(void)configure:(News *)news {
+    self.category.text = news.category;
+    self.headline.text = news.headline;
+}
+
 @end
