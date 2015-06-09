@@ -32,6 +32,7 @@
 //    self.navigationItem.rightBarButtonItem = addButton;
     
     self.navigationController.navigationBarHidden = YES;
+    self.dateLabel.text = [self getCurrentDateString];
     
     NewsItem *news1 = [[NewsItem alloc] initWithCategory:0 andHeadline:@"Climate change protests, divestments meet fossil fuels realities"];
     NewsItem *news2 = [[NewsItem alloc] initWithCategory:2 andHeadline:@"Scotland's 'Yes' leader says independence vote is 'once in a lifetime'"];
@@ -56,6 +57,12 @@
 
 -(BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+-(NSString *)getCurrentDateString {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"MMMM d"];
+    return [formatter stringFromDate:[NSDate date]];
 }
 
 #pragma mark - Segues

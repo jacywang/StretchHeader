@@ -17,6 +17,7 @@
 		9C3C0C701B2760B500ABABF5 /* YahooNewsSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3C0C6F1B2760B500ABABF5 /* YahooNewsSampleTests.m */; };
 		9C3C0C7B1B27619900ABABF5 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3C0C7A1B27619900ABABF5 /* CustomTableViewCell.m */; };
 		9C3C0C7E1B2763FD00ABABF5 /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3C0C7D1B2763FD00ABABF5 /* NewsItem.m */; };
+		9C3C0C801B27725600ABABF5 /* yahooNewsHeader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C3C0C7F1B27725600ABABF5 /* yahooNewsHeader.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9C3C0C7A1B27619900ABABF5 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		9C3C0C7C1B2763FD00ABABF5 /* NewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsItem.h; sourceTree = "<group>"; };
 		9C3C0C7D1B2763FD00ABABF5 /* NewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsItem.m; sourceTree = "<group>"; };
+		9C3C0C7F1B27725600ABABF5 /* yahooNewsHeader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yahooNewsHeader.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		9C3C0C501B2760B500ABABF5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9C3C0C7F1B27725600ABABF5 /* yahooNewsHeader.jpg */,
 				9C3C0C511B2760B500ABABF5 /* Info.plist */,
 				9C3C0C521B2760B500ABABF5 /* main.m */,
 			);
@@ -214,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3C0C801B27725600ABABF5 /* yahooNewsHeader.jpg in Resources */,
 				9C3C0C5F1B2760B500ABABF5 /* Main.storyboard in Resources */,
 				9C3C0C641B2760B500ABABF5 /* LaunchScreen.xib in Resources */,
 				9C3C0C611B2760B500ABABF5 /* Images.xcassets in Resources */,
@@ -430,6 +434,7 @@
 				9C3C0C751B2760B500ABABF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C3C0C761B2760B500ABABF5 /* Build configuration list for PBXNativeTarget "YahooNewsSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +443,7 @@
 				9C3C0C781B2760B500ABABF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
