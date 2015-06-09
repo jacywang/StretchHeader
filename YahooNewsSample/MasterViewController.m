@@ -45,7 +45,7 @@ static const int kTableHeaderHeight = 280;
     NewsItem *news7 = [[NewsItem alloc] initWithCategory:0 andHeadline:@"South Africa in $40 billion deal for Russian nuclear reactors"];
     NewsItem *news8 = [[NewsItem alloc] initWithCategory:2 andHeadline:@"'One million babies' created by EU student exchanges"];
     
-    self.newsArray = [NSMutableArray arrayWithArray:@[news1, news2, news3, news4, news5, news6, news7, news8]] ;
+    self.newsArray = [NSMutableArray arrayWithArray:@[news1, news2, news3, news4, news5, news6, news7, news8]];
     
     self.myHeaderView = self.tableView.tableHeaderView;
     self.tableView.tableHeaderView = nil;
@@ -73,8 +73,16 @@ static const int kTableHeaderHeight = 280;
     return [formatter stringFromDate:[NSDate date]];
 }
 
--(void)updateHeaderView {
+- (void)updateHeaderView {
     
+    CGFloat headerFrameWidth = self.tableView.bounds.size.width;
+    CGFloat headerFrameHeight = MAX(kTableHeaderHeight, -self.tableView.contentOffset.y);
+    
+    self.myHeaderView.frame = CGRectMake(0, -headerFrameHeight, headerFrameWidth, headerFrameHeight);
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self updateHeaderView];
 }
 
 #pragma mark - Segues
