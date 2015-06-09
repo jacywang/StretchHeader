@@ -11,6 +11,8 @@
 #import "NewsItem.h"
 #import "CustomTableViewCell.h"
 
+static const int kTableHeaderHeight = 280;
+
 @interface MasterViewController ()
 
 @property NSMutableArray *newsArray;
@@ -45,8 +47,14 @@
     
     self.newsArray = [NSMutableArray arrayWithArray:@[news1, news2, news3, news4, news5, news6, news7, news8]] ;
     
+    self.myHeaderView = self.tableView.tableHeaderView;
+    self.tableView.tableHeaderView = nil;
+    [self.tableView addSubview:self.myHeaderView];
+    self.myHeaderView.frame = CGRectMake(0, -kTableHeaderHeight, self.myHeaderView.frame.size.width, self.myHeaderView.frame.size.height);
+    self.tableView.contentInset = UIEdgeInsetsMake(kTableHeaderHeight, 0, 0, 0);
     self.tableView.estimatedRowHeight = 50;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -63,6 +71,10 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"MMMM d"];
     return [formatter stringFromDate:[NSDate date]];
+}
+
+-(void)updateHeaderView {
+    
 }
 
 #pragma mark - Segues
