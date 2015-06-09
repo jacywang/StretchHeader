@@ -31,6 +31,8 @@
 //    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
 //    self.navigationItem.rightBarButtonItem = addButton;
     
+    self.navigationController.navigationBarHidden = YES;
+    
     News *asiaNews = [[News alloc] initWithCategory:@"Asia" andHeadline:@"Hong Kong issues 'red alert' against South Korea travel due to MERS"];
     News *usNews = [[News alloc] initWithCategory:@"USA" andHeadline:@"Texas pool party: Would a police body camera have made a difference?"];
     News *africaNews = [[News alloc] initWithCategory:@"Africa" andHeadline:@"Nigeria's legislature to be led by presidential opponents"];
