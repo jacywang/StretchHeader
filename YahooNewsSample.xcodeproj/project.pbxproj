@@ -16,7 +16,7 @@
 		9C3C0C641B2760B500ABABF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C3C0C621B2760B500ABABF5 /* LaunchScreen.xib */; };
 		9C3C0C701B2760B500ABABF5 /* YahooNewsSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3C0C6F1B2760B500ABABF5 /* YahooNewsSampleTests.m */; };
 		9C3C0C7B1B27619900ABABF5 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3C0C7A1B27619900ABABF5 /* CustomTableViewCell.m */; };
-		9C3C0C7E1B2763FD00ABABF5 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3C0C7D1B2763FD00ABABF5 /* News.m */; };
+		9C3C0C7E1B2763FD00ABABF5 /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3C0C7D1B2763FD00ABABF5 /* NewsItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,8 @@
 		9C3C0C6F1B2760B500ABABF5 /* YahooNewsSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YahooNewsSampleTests.m; sourceTree = "<group>"; };
 		9C3C0C791B27619900ABABF5 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		9C3C0C7A1B27619900ABABF5 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
-		9C3C0C7C1B2763FD00ABABF5 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
-		9C3C0C7D1B2763FD00ABABF5 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		9C3C0C7C1B2763FD00ABABF5 /* NewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsItem.h; sourceTree = "<group>"; };
+		9C3C0C7D1B2763FD00ABABF5 /* NewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 				9C3C0C5B1B2760B500ABABF5 /* DetailViewController.m */,
 				9C3C0C791B27619900ABABF5 /* CustomTableViewCell.h */,
 				9C3C0C7A1B27619900ABABF5 /* CustomTableViewCell.m */,
-				9C3C0C7C1B2763FD00ABABF5 /* News.h */,
-				9C3C0C7D1B2763FD00ABABF5 /* News.m */,
+				9C3C0C7C1B2763FD00ABABF5 /* NewsItem.h */,
+				9C3C0C7D1B2763FD00ABABF5 /* NewsItem.m */,
 				9C3C0C5D1B2760B500ABABF5 /* Main.storyboard */,
 				9C3C0C601B2760B500ABABF5 /* Images.xcassets */,
 				9C3C0C621B2760B500ABABF5 /* LaunchScreen.xib */,
@@ -236,7 +236,7 @@
 			files = (
 				9C3C0C561B2760B500ABABF5 /* AppDelegate.m in Sources */,
 				9C3C0C591B2760B500ABABF5 /* MasterViewController.m in Sources */,
-				9C3C0C7E1B2763FD00ABABF5 /* News.m in Sources */,
+				9C3C0C7E1B2763FD00ABABF5 /* NewsItem.m in Sources */,
 				9C3C0C531B2760B500ABABF5 /* main.m in Sources */,
 				9C3C0C7B1B27619900ABABF5 /* CustomTableViewCell.m in Sources */,
 				9C3C0C5C1B2760B500ABABF5 /* DetailViewController.m in Sources */,

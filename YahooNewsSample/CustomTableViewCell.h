@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "News.h"
+#import "NewsItem.h"
 
 @interface CustomTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *category;
 @property (weak, nonatomic) IBOutlet UILabel *headline;
 
--(void)configure:(News *)news;
+-(void)configure:(NewsItem *)news;
 
 @end

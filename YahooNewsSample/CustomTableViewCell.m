@@ -20,8 +20,9 @@
     // Configure the view for the selected state
 }
 
--(void)configure:(News *)news {
+-(void)configure:(NewsItem *)news {
     self.category.text = news.category;
+    self.category.textColor = news.fontColorForCategory;
     self.headline.text = news.headline;
 }
 

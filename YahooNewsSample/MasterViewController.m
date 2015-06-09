@@ -8,7 +8,7 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
-#import "News.h"
+#import "NewsItem.h"
 #import "CustomTableViewCell.h"
 
 @interface MasterViewController ()
@@ -33,16 +33,16 @@
     
     self.navigationController.navigationBarHidden = YES;
     
-    News *asiaNews = [[News alloc] initWithCategory:@"Asia" andHeadline:@"Hong Kong issues 'red alert' against South Korea travel due to MERS"];
-    News *usNews = [[News alloc] initWithCategory:@"USA" andHeadline:@"Texas pool party: Would a police body camera have made a difference?"];
-    News *africaNews = [[News alloc] initWithCategory:@"Africa" andHeadline:@"Nigeria's legislature to be led by presidential opponents"];
-    News *middleEastNews = [[News alloc] initWithCategory:@"Middle East" andHeadline:@"Syrian rebels capture army base in south: rebels, monitor"];
-    News *europeEastNews = [[News alloc] initWithCategory:@"Europe" andHeadline:@"Romania MPs reject lifting premier's immunity for graft probe"];
-    News *canadaNews = [[News alloc] initWithCategory:@"Canada" andHeadline:@"Parents urged to encourage freedom, play, as kids get D-minus for physical activity"];
-    News *techNews = [[News alloc] initWithCategory:@"Technology" andHeadline:@"iOS 9: everything we know after WWDC 2015"];
-    News *sportNews = [[News alloc] initWithCategory:@"Sport" andHeadline:@"FIFA Scandal: Argentinian Businessman Alejandro Burzaco Arrested in Italy"];
+    NewsItem *news1 = [[NewsItem alloc] initWithCategory:0 andHeadline:@"Climate change protests, divestments meet fossil fuels realities"];
+    NewsItem *news2 = [[NewsItem alloc] initWithCategory:2 andHeadline:@"Scotland's 'Yes' leader says independence vote is 'once in a lifetime'"];
+    NewsItem *news3 = [[NewsItem alloc] initWithCategory:3 andHeadline:@"summary: \"Airstrikes boost Islamic State, FBI director warns more hostages possible\""];
+    NewsItem *news4 = [[NewsItem alloc] initWithCategory:4 andHeadline:@"Nigeria says 70 dead in building collapse; questions S. Africa victim claim"];
+    NewsItem *news5 = [[NewsItem alloc] initWithCategory:5 andHeadline:@"Despite UN ruling, Japan seeks backing for whale hunting"];
+    NewsItem *news6 = [[NewsItem alloc] initWithCategory:1 andHeadline:@"Officials: FBI is tracking 100 Americans who fought alongside IS in Syria"];
+    NewsItem *news7 = [[NewsItem alloc] initWithCategory:0 andHeadline:@"South Africa in $40 billion deal for Russian nuclear reactors"];
+    NewsItem *news8 = [[NewsItem alloc] initWithCategory:2 andHeadline:@"'One million babies' created by EU student exchanges"];
     
-    self.newsArray = [NSMutableArray arrayWithArray:@[asiaNews, usNews, africaNews, middleEastNews, europeEastNews, canadaNews, techNews, sportNews]] ;
+    self.newsArray = [NSMutableArray arrayWithArray:@[news1, news2, news3, news4, news5, news6, news7, news8]] ;
     
     self.tableView.estimatedRowHeight = 50;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
@@ -81,7 +81,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
      CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    News *news = self.newsArray[indexPath.row];
+    NewsItem *news = self.newsArray[indexPath.row];
     [cell configure:news];
     
     return cell;

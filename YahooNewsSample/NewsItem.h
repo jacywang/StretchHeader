@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface News : NSObject
+@interface NewsItem : NSObject
 
 @property (nonatomic, strong) NSString *category;
 @property (nonatomic, strong) NSString *headline;
+@property (nonatomic, strong) UIColor *fontColorForCategory;
 
--(instancetype)initWithCategory:(NSString *)category andHeadline:(NSString *)headline;
+-(instancetype)initWithCategory:(NSInteger)categoryNum andHeadline:(NSString *)headline;
 
 @end
