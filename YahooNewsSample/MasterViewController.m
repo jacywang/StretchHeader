@@ -15,6 +15,7 @@ static const int kTableHeaderHeight = 280;
 
 @interface MasterViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *myHeaderView;
 @property NSMutableArray *newsArray;
 
 @end
@@ -47,11 +48,11 @@ static const int kTableHeaderHeight = 280;
     
     self.newsArray = [NSMutableArray arrayWithArray:@[news1, news2, news3, news4, news5, news6, news7, news8]];
     
-    self.myHeaderView = self.tableView.tableHeaderView;
     self.tableView.tableHeaderView = nil;
     [self.tableView addSubview:self.myHeaderView];
     self.myHeaderView.frame = CGRectMake(0, -kTableHeaderHeight, self.myHeaderView.frame.size.width, self.myHeaderView.frame.size.height);
     self.tableView.contentInset = UIEdgeInsetsMake(kTableHeaderHeight, 0, 0, 0);
+    
     self.tableView.estimatedRowHeight = 50;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     
@@ -74,7 +75,6 @@ static const int kTableHeaderHeight = 280;
 }
 
 - (void)updateHeaderView {
-    
     CGFloat headerFrameWidth = self.tableView.bounds.size.width;
     CGFloat headerFrameHeight = MAX(kTableHeaderHeight, -self.tableView.contentOffset.y);
     

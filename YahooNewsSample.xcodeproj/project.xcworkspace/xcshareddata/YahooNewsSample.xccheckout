@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7F944B4F-8610-49EC-8E7A-99A650B66512</string>
+	<key>IDESourceControlProjectName</key>
+	<string>YahooNewsSample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FA1A8468B4920BD40C9A1D61B05B89E72D6B20FA</key>
+		<string>github.com:jacywang/StretchHeader.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>YahooNewsSample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FA1A8468B4920BD40C9A1D61B05B89E72D6B20FA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:jacywang/StretchHeader.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FA1A8468B4920BD40C9A1D61B05B89E72D6B20FA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FA1A8468B4920BD40C9A1D61B05B89E72D6B20FA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YahooNewsSample</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -10,7 +10,7 @@
 
 @interface MasterViewController : UITableViewController <UIScrollViewDelegate>
 
-@property (weak, nonatomic) UIView *myHeaderView;
+
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
 @end

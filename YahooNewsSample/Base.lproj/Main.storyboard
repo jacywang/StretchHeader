@@ -100,6 +100,7 @@
                     <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz"/>
                     <connections>
                         <outlet property="dateLabel" destination="kne-15-DSs" id="YlE-Yt-aI6"/>
+                        <outlet property="myHeaderView" destination="ksN-ER-Ecs" id="br4-Yi-0V3"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
@@ -122,7 +123,7 @@
                                 <rect key="frame" x="20" y="292" width="560" height="17"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
